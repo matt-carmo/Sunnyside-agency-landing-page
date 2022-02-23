@@ -78,7 +78,7 @@ header .contact:hover{
       transition: 200ms;
 }
 .container {
-      background: url('/images/desktop/image-header.jpg');
+      background: url('../images/desktop/image-header.jpg');
       background-position:bottom;
       background-size: cover;
       height: 76vh;   
