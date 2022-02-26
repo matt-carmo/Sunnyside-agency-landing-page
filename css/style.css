@@ -55,19 +55,26 @@ header ul {
 }
 ul{
       list-style: none;
+
+      justify-content: center;
+      align-items: center;
+      margin-top: -10px;
 }
 header a {
       text-decoration: none;
       color: var(---white);
       padding: 17px 20px;
       margin: 10px;
+ 
 }
 header .contact{
       text-transform: uppercase;
       color: var(--dark-blue-photography-text);
       background: #fff;
       border-radius: 30px;
-   
+      border: none;
+ 
+      padding: 1.2rem 2em;
       font-family: 'Fraunces', serif;
       font-size: 1rem;
 }
@@ -148,7 +155,7 @@ header .contact:hover{
       right: -5px;
       padding-right:3rem;
       bottom:10px;
-      z-index: -1000;
+  
       
 }
 .yellow::before{
@@ -284,22 +291,29 @@ header .contact:hover{
 @media (max-width: 960px) {
       header ul{
             flex-direction: column;
-            gap: 30px;
-            
+            gap: 30px;            
             width: 90vw;
             display: flex;
             background-color: #fff;
             align-items: center;
             justify-content: center;
             height: 300px;
-          
+            visibility: hidden;
+            
+
       }
-      nav a {
-            color: #000;
+      header  .active {
+            visibility:visible;
       }
+
+
+      nav button{
+
+            color: var(--very-dark-desaturated-blue);
+      }
+
       nav{
             margin: 70px 0;
-            
             position: absolute;
             left: 0px;
             display: flex;
@@ -310,17 +324,20 @@ header .contact:hover{
       header{
             width: 100%;
             position: fixed;
-           
+            z-index: 30000;
             height: 120px;
             
       }
       header .contact{
             background: var(--yellow);
+            color: var(--very-dark-desaturated-blue);
       }
       .menu-burguer{
-            
+            display: flex;            
       }
-      
+      nav li a{
+            color: var(--dark-grayish-blue);
+      }
       .container-2{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
