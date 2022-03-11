@@ -341,8 +341,11 @@ header .contact:hover{
       nav li a{
             color: var(--dark-grayish-blue);
       }
+      .text-content {
+            padding: 2rem;
+      }
       .text-content h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
       }
       .text-center-photo{
             padding: 10px;
@@ -383,12 +386,13 @@ header .contact:hover{
       grid-template-columns: repeat(2, 1fr);
       }
       .container-5 li {
-            padding: 1rem;
+   
+            padding:40px 20px;
       }
       .container-5{
             background: var(---footer);
             text-align: center;
-            padding: 0px;
+            padding: 50px;
       }
 
 
